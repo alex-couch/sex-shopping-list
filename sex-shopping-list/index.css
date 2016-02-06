@@ -41,12 +41,19 @@ img{
     padding-top: 0;
 }
 
-a.btn{
+button.btn{
     margin-top: 0;
     margin-bottom: 0;
 }
 
-a.btn-primary{
+button.btn:hover{
+    background-color: #b8c5c5;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #04C #04C #002A80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+}
+
+button.btn-primary{
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     background-color: #FF00E4;
@@ -54,13 +61,14 @@ a.btn-primary{
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
 }
 
-a.btn-primary:hover, a.btn-primary:active, a.btn-primary.active, a.btn-primary.disabled, a.btn-primary[disabled]{
+button.btn-primary:hover, a.btn-primary:active, a.btn-primary.active, a.btn-primary.disabled, a.btn-primary[disabled]{
     color: white;
     background-color: #9E0079;
 }
 
 #buttons{
-    background-color: white;
+    background-color: transparent;
     color: black;
+    padding-top: 8px;
 }
 
