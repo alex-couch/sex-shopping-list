@@ -2,6 +2,16 @@ body{
     padding-bottom: 1500px;
 }
 
+h1>a{
+    color: #ddeaea;
+    text-decoration: none;
+}
+
+h1>a:hover{
+    color: #fafafa;
+    text-decoration: none;
+}
+
 #header{
     background-color: #000;
     color: azure;
@@ -18,3 +28,47 @@ img{
     float: left;
     padding-top: 10px;
 }
+
+#header{
+    background-color: #000;
+    color: azure;
+    padding-left: 385px;
+}
+
+#header>h1{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+
+button.btn{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button.btn:hover{
+    background-color: #b8c5c5;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #04C #04C #002A80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+}
+
+button.btn-primary{
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #FF00E4;
+    border-color: #04C #04C #002A80;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+}
+
+button.btn-primary:hover, a.btn-primary:active, a.btn-primary.active, a.btn-primary.disabled, a.btn-primary[disabled]{
+    color: white;
+    background-color: #9E0079;
+}
+
+#buttons{
+    background-color: transparent;
+    color: black;
+    padding-top: 8px;
+}
+
