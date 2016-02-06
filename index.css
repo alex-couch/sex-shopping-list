@@ -73,9 +73,9 @@ button.btn-primary:hover, a.btn-primary:active, a.btn-primary.active, a.btn-prim
 }
 
 .login-header{
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #FF00E4;
     color: white;
-    position: absolute;
+    padding-top: 10px;
 }
 
