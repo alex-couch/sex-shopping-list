@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="form_val.js"></script>
+    <script src="responsive.js"></script>
 </head>
 <body>
 <div class="main">
@@ -19,11 +19,11 @@
     </div>
 
     <div class="container-fluid">
-        <div id="login">
+        <div class="login">
             <div class="login-header">
                 <h1>Login</h1>
             </div>
-            <form name="login" action="form_val.js" onsubmit="return validateForm()" method="post">
+            <form name="login" action="responsive.js">
                 <label id="name">Name</label>
                 <br />
                 <input class="fields" type="text" width="500px" height="100px" name="name" />
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="container">
             <div class="btn-toolbar">
                 <div class="btn-group" id="buttons">
