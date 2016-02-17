@@ -1,0 +1,20 @@
+.main{
+	background-color: rgba(255, 20, 255, 0.15);
+	text-align: center;
+}
+
+.shop-header{
+	background-color: #ff00ff;
+	color: azure;
+	border-radius: 5px;
+	margin-top: 85px;
+}
+
+.list-body{
+    list-style-type: none;
+    font-size: 30px;
+	background-color: #fae2b2;
+	box-shadow: 10px 10px 5px #000000;
+	margin-right: 20px;
+	margin-left: -20px;
+}
