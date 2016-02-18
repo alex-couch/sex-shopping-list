@@ -1,10 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sexy Shopping List</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="shoplist.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
-<body>
-
+    <body class="main">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid" id="header">
+            <img src="logo.png"/>
+            <h1><a href="#">The Sexy Shopping List</a></h1>
+        </div>
+    </div>
+    <script type="text/javascript" src="shoplist.js"></script>
+	<div class="container ">
+		<div class="shoplist">
+			<h1 class="shop-header">Meat</h1>
+			<ul>
+				<li class="list-body">Steak</li><br>
+				<li class="list-body">Chicken</li><br>
+				<li class="list-body">Eggs</li><br>
+				<li class="list-body">Hamburger</li><br>
+			</ul>
+			<form class="itemAdd" action="shoplist.js" method="post">
+				<label>Add Meat</label>
+				<input type="text" name="item" class="addItem"  />
+				<button type="button" name="submit" onclick="addItems('.additem');">Submit</button>
+			</form>
+			<h1 class="shop-header">Beverages</h1>
+			<ul>
+				<li class="list-body">Milk</li><br>
+				<li class="list-body">Soda</li><br>
+				<li class="list-body">Water Enhancer</li><br>
+				<li class="list-body">Apple Juice</li><br>
+			</ul>
+			<form action="shoplist.php" method="get">
+				<label>Add Beverages</label>
+				<input type="text" name="item" />
+				<input type="submit" name="submit" />
+			</form>
+			<h1 class="shop-header">Snacks</h1>
+			<ul>
+				<li class="list-body">Chips</li><br>
+				<li class="list-body">Fruit Snacks</li><br>
+				<li class="list-body">Bread</li><br>
+			</ul>
+			<form action="shoplist.js" method="get">
+				<label>Add Snacks</label>
+				<input type="text" name="item" />
+				<input type="submit" name="submit" />
+			</form>
+			<h1 class="shop-header">Fruits and Vegetables</h1>
+			<ul>
+				<li class="list-body">Grapes</li><br>
+				<li class="list-body">Apples</li><br>
+				<li class="list-body">Corn</li><br>
+				<li class="list-body">Peas</li><br>
+			</ul>
+			<form action="shoplist.js" method="get">
+				<label>Add F&V</label>
+				<input type="text" name="item" />
+				<input type="submit" name="submit" />
+			</form>
+		</div>
+	</div>
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <div class="btn-toolbar">
+                <div class="btn-group" id="buttons">
+                    <button class="btn btn-large btn-primary" href="#" type="button" >Cook</button>
+                    <button class="btn btn-large" href="#">Buy</button>
+                    <button class="btn btn-large" href="#">Recipe</button>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>
