@@ -17,9 +17,9 @@ require 'header.php';
                 <br />
                 <input class="fields" type="password" width="500px" height="100px" name="item" />
                 <br />
-                <label>Item</label>
+                <label>List Name</label>
                 <br />
-                <input class="fields" type="text" width="500px" height="100px" name="item" />
+                <input class="fields" type="text" width="500px" height="100px" name="list-name" />
             </form>
         </div>
     </div>
