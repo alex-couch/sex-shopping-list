@@ -13,10 +13,14 @@ $(document).ready(function(){
     }).mouseleave(function(){
         $(".list-body").css("box-shadow", "10ox 10px 5px #000");
     });
+
+    $(".list-body").on('click', '#remove', function(){
+        $(this).remove();
+    });
 });
 
 function submitItem(){
     var itemName = $("#item").val();
-    $("#list").append("<li class='list-body'>"+itemName+"</li>");
+    $("#list").append("<li class='list-body'>"+itemName+"<button type='button' id='remove' class='close'>&times;</button></li>");
     $("#item").val('');
 }
