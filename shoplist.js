@@ -14,8 +14,8 @@ $(document).ready(function(){
         $(".list-body").css("box-shadow", "10ox 10px 5px #000");
     });
 
-    $(".list-body").on('click', '#remove', function(){
-        $(this).remove();
+    $("#remove").click(function(){
+        $(this).parent().remove();
     });
 });
 
