@@ -1,11 +1,26 @@
-function addItems(val){
-   document.html("<li class='list-body'>"+val+"</li>");
-}
-
 $(document).ready(function(){
-   $(".list-body").mouseenter(function(){
-      $(this).css("box-shadow", "5px 5px 5px #000");
-   }).mouseleave(function(){
-      $(this).css("box-shadow", "10px 10px 5px #000");
-   });
+    $("#item").onkeydown = function(e){
+        if(e.keyCode == 13){
+            submitItem();
+        }
+    };
+    $("#add").click(function(){
+        submitItem();
+    });
+
+    $("li").mouseenter(function(){
+       $(".list-body").css("box-shadow", "5px 5px 5px #000");
+    }).mouseleave(function(){
+        $(".list-body").css("box-shadow", "10ox 10px 5px #000");
+    });
+
+    $(".list-body").on('click', '#remove', function(){
+        $(this).remove();
+    });
 });
+
+function submitItem(){
+    var itemName = $("#item").val();
+    $("#list").append("<li class='list-body'>"+itemName+"<button type='button' id='remove' class='close'>&times;</button></li>");
+    $("#item").val('');
+}
