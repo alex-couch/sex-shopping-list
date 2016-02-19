@@ -6,7 +6,7 @@
 .shop-header{
 	background-color: #ff00ff;
 	color: azure;
-	border-radius: 5px;
+	border-radius: 15px;
 	margin-top: 85px;
 }
 
@@ -18,8 +18,19 @@
 	margin-right: 20px;
 	margin-left: -20px;
 	margin-bottom: 20px;
+	border-radius: 15px;
 }
 
 .list-body:hover{
 	box-shadow: 5px 5px 5px #000;
+}
+
+button.close{
+    opacity: .35;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+button.close:hover{
+    opacity: .8;
 }
